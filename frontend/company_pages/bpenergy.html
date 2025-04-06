@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BP Energy</title>
+    <link rel="stylesheet" href="/frontend/styles.css">
+    <style>
+        main {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  }
+     #location-pin {
+        text-decoration: none;  
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/media/logo3.png" alt="EDC Logo">
+            </div>
+            <div class="video-container">
+                <video autoplay muted loop id="nav-video">
+                    <source src="/media/bv10.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/frontend/register.html">Sign Up</a></li>
+                <li><a href="/frontend/login.html">Log In</a></li>
+                <li><a href="/frontend/profiles.html">Profiles</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="job-container">
+            <div class="job-logo">
+              <img src="data:image/png;base64,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" alt="Startup">
+            </div>
+            <div class="job-details">
+              <h2>Integrity Engineer</h2>
+              <p><strong>Company:</strong> BP energy</p>
+              <p><strong>Location:</strong>2nd, 3rd, and 4th Floor, Building No. 6 R4 KRC Infrastructure & Projects Pvt Ltd SEZ Kharadi Pune 411014 <br><a href="https://www.google.com/maps/search/BP+Business+Solutions+India+Private+Limited%2C+Kharadi%2C+Pune"id="location-pin" target="_blank">Click me to open in map 📌</a></p>
+              <p><strong>Job Details:</strong> Bachelor's degree in engineering, preferably in mechanical, chemical, or materials engineering.  Key skills include strong analytical abilities, attention to detail, proficiency in digital tools like Microsoft Office and SAP, and excellent written and verbal communication skills. 
+                </p>
+              <p><strong>Salary:</strong>₹45,000–₹60,000/month </p>
+              <form action="submit_application.php" method="post">
+                <button type="submit" class="apply-btn">Apply Now</button>
+              </form>
+            </div>
+          </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-video-container">
+            <video autoplay muted loop id="footer-video">
+                <source src="/media/bv10.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="footer-content">
+            <p>© 2024 Able Connect. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="/frontend/contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

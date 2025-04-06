@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persistent Systems</title>
+    <link rel="stylesheet" href="/frontend/styles.css">
+    <style>
+        main {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  }
+     #location-pin {
+        text-decoration: none;  
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/media/logo3.png" alt="EDC Logo">
+            </div>
+            <div class="video-container">
+                <video autoplay muted loop id="nav-video">
+                    <source src="/media/bv10.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/frontend/register.html">Sign Up</a></li>
+                <li><a href="/frontend/login.html">Log In</a></li>
+                <li><a href="/frontend/profiles.html">Profiles</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="job-container">
+            <div class="job-logo">
+              <img src="data:image/png;base64,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" alt="Startup">
+            </div>
+            <div class="job-details">
+              <h2> Back Office Executive</h2>
+              <p><strong>Company:</strong> Persistent Systems</p>
+              <p><strong>Location:</strong> multiple locations 
+                Pune, India
+Situated at 9A/12, Kashibai Khilare Marg, Erandawana, Pune 411004. 
+402 Senapati Bapat Road, Shivajinagar, Pune 411016, this is the headquarters of Persistent Systems etc<br><a href="https://maps.app.goo.gl/jgqUSP7MNEiysKWL9" id="location-pin" target="_blank">Click me to open in map 📌</a></p>
+              <p><strong>Job Details:</strong> strong communication, organizational, and data management skills. Proficiency in administrative tasks and problem-solving abilities are also essential. </p>
+              <p><strong>Salary:</strong> ₹18,000–₹22,000/month</p>
+              <form action="submit_application.php" method="post">
+                <button type="submit" class="apply-btn">Apply Now</button>
+              </form>
+            </div>
+          </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-video-container">
+            <video autoplay muted loop id="footer-video">
+                <source src="/media/bv10.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="footer-content">
+            <p>© 2024 Able Connect. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="/frontend/contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

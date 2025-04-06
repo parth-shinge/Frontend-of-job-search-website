@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mphasis</title>
+    <link rel="stylesheet" href="/frontend/styles.css">
+    <style>
+        main {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  }
+     #location-pin {
+        text-decoration: none;  
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/media/logo3.png" alt="EDC Logo">
+            </div>
+            <div class="video-container">
+                <video autoplay muted loop id="nav-video">
+                    <source src="/media/bv10.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/frontend/register.html">Sign Up</a></li>
+                <li><a href="/frontend/login.html">Log In</a></li>
+                <li><a href="/frontend/profiles.html">Profiles</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="job-container">
+            <div class="job-logo">
+              <img src="data:image/jpeg;base64,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" alt="Startup">
+            </div>
+            <div class="job-details">
+              <h2> Back Office Executive</h2>
+              <p><strong>Company:</strong> Mphasis</p>
+              <p><strong>Location:</strong>  2, Eon Free Zone Rd, EON Free Zone, Kharadi, Pune, Maharashtra 411014<br><a href="https://maps.app.goo.gl/9SMbqkS4tSDD2mnD6" id="location-pin" target="_blank">Click me to open in map 📌</a></p>
+              <p><strong>Job Details:</strong>strong communication, data management, MS Office proficiency, problem-solving, and the ability to handle backend operations efficiently.</p>
+              <p><strong>Salary:</strong> ₹18,000–₹22,000/month</p>
+              <form action="submit_application.php" method="post">
+                <button type="submit" class="apply-btn">Apply Now</button>
+              </form>
+            </div>
+          </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-video-container">
+            <video autoplay muted loop id="footer-video">
+                <source src="/media/bv10.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="footer-content">
+            <p>© 2024 Able Connect. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="/frontend/contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

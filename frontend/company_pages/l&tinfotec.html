@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larsen & Toubro Infotech (LTI)</title>
+    <link rel="stylesheet" href="/frontend/styles.css">
+    <style>
+        main {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  }
+     #location-pin {
+        text-decoration: none;  
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/media/logo3.png" alt="EDC Logo">
+            </div>
+            <div class="video-container">
+                <video autoplay muted loop id="nav-video">
+                    <source src="/media/bv10.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/frontend/register.html">Sign Up</a></li>
+                <li><a href="/frontend/login.html">Log In</a></li>
+                <li><a href="/frontend/profiles.html">Profiles</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="job-container">
+            <div class="job-logo">
+              <img src="data:image/jpeg;base64,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" alt="Startup">
+            </div>
+            <div class="job-details">
+              <h2> Data Analyst</h2>
+              <p><strong>Company:</strong> Larsen & Toubro Infotech (LTI)</p>
+              <p><strong>Location:</strong> HX23+VW7, EON Free Zone, Kharadi, Pune, Maharashtra 41101 <br><a href="https://maps.app.goo.gl/1fRi1xT43KwGBLVh6" target="_blank" id="location-pin">Click me to open in map 📌</a></p>
+              <p><strong>Job Details:</strong> Strong skills in data visualization (Tableau, Power BI), SQL, Python/R, statistics, and a solid understanding of business processes and analytical problem-solving. </p>
+              <p><strong>Salary:</strong> ₹₹30,000–₹40,000/month</p>
+              <form action="submit_application.php" method="post">
+                <button type="submit" class="apply-btn">Apply Now</button>
+              </form>
+            </div>
+          </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-video-container">
+            <video autoplay muted loop id="footer-video">
+                <source src="/media/bv10.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="footer-content">
+            <p>© 2024 Able Connect. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="/frontend/contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

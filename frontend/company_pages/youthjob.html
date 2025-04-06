@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youth Job</title>
+    <link rel="stylesheet" href="/frontend/styles.css">
+    <style>
+        main {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  }
+     #location-pin {
+        text-decoration: none;  
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/media/logo3.png" alt="EDC Logo">
+            </div>
+            <div class="video-container">
+                <video autoplay muted loop id="nav-video">
+                    <source src="/media/bv10.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/frontend/register.html">Sign Up</a></li>
+                <li><a href="/frontend/login.html">Log In</a></li>
+                <li><a href="/frontend/profiles.html">Profiles</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="job-container">
+            <div class="job-logo">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbNsZHf7AOGFxAP1k28KmQqLfQCqX1iIB0vw&s" alt="Startup">
+            </div>
+            <div class="job-details">
+              <h2>Back Office Executive</h2>
+              <p><strong>Company:</strong> Youth4Jobs Placements</p>
+              <p><strong>Location:</strong>  Shop No.116, First Floor, Nilkanth Heights, Ajmera Society Building A1, Bhawani Peth Road, Bhawani Peth, Pune - 411042
+
+                This location is near Poona College and next to Alankar Medical Store. 
+                 <br><a href="https://maps.app.goo.gl/EpgvUUaStd9VWgJ49" id="location-pin" target="_blank">Click me to open in map 📌</a></p>
+              <p><strong>Job Details:</strong>  Strong communication, organizational, and data management skills. Proficiency in administrative tasks and problem-solving abilities are also essential.</p>
+              <p><strong>Salary:</strong>₹18,000–₹22,000/month </p>
+              <form action="submit_application.php" method="post">
+                <button type="submit" class="apply-btn">Apply Now</button>
+              </form>
+            </div>
+          </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-video-container">
+            <video autoplay muted loop id="footer-video">
+                <source src="/media/bv10.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="footer-content">
+            <p>© 2024 Able Connect. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="/frontend/contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

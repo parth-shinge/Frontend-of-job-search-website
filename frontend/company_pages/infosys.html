@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infosys BPM</title>
+    <link rel="stylesheet" href="/frontend/styles.css">
+    <style>
+        main {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  }
+     #location-pin {
+        text-decoration: none;  
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/media/logo3.png" alt="EDC Logo">
+            </div>
+            <div class="video-container">
+                <video autoplay muted loop id="nav-video">
+                    <source src="/media/bv10.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/frontend/register.html">Sign Up</a></li>
+                <li><a href="/frontend/login.html">Log In</a></li>
+                <li><a href="/frontend/profiles.html">Profiles</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="job-container">
+            <div class="job-logo">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAATlBMVEUHfMP///8Ab70Ad8H3+/02lc8AZ7qp0uuDvuEljMtcqNft9vvQ5vNRo9V4uN682+5FndKx1uzh7/hnr9oZhceizuna6/aZyeZvs9yRxeQbJvDPAAAHEElEQVR4nO2b65qzKgyFNVQ8Vm3twd7/jW4goKB2qrad55v9rPdXxyJlQRISdKIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAX0GQRqxpSuubTro39227cSt0KeM4btb8ClWac7JhQILa6/kQx4fD7VRfvqlEtHEipazj6PWvUGzYIISOsc8XlQgRi/pcNpTE8vWwDhuFyCbQsWay9iKyh2zSqMzkCovZKoRYR5OmTfltIVQldKrquKc6+7QQynTru/X07stCbrkS0pyl6B8fFiIio0NyayHk9atC7plsMoqVovbDQuikG5N34ZthSzk79QU9jrn/k8+Gtk2Ibpv6vX51IxFFnEuSxzWhcZMQYSJv991N0EcF3vgc39aY7yYhdNdti98TojZfcRGr8o5AiNC4LkSYg+g/ZaXbHukZT+xMmL7ECisUluDSChUTIeMtgmTeZWmaXvuI50MUWZbVpnFVZzMep6pq7l0006Il5IW+oz7mPyZnWu0lKRRtvjn7C4VwuqJcgKLruHWrYB65ePWSQ09BKKAoO3tfl2nxbNVI9JXX8Lol+1sWUgj5CEeXqn2D0lVCFP04mRQ1s6+bxUgqxGyiXkfcF0KOVE77PJNLTdZQukmnwl06HMavl5ZERyfb8oNCWMe9O2bD4Csp8iRJctO40R+Z3DVIu+KYDaaRm7FSx/dycIgKO8Z6LkSl65pbEUnlHO31M0LMpCaSTKjJ7IXOBBNpGqfkgou74Whikhqssz+tRPAsF1LYiOjy5llKzolPfOSWuqPsQ0Jqm0wpF3RzTmNjt7M7HRWNIdqZiBqc9ThvPLIcfysYQ8OzMSqj6PYJIa3Xh7BKzC4YCuFdJW6kNzA7uUo4L8jZn37bVzUZokqpjPUG1+h1vvtSSBb8ELHFmtEHQoR1gdBSnJKTvLJJ+l/aJZm4u+iHmQo6elvI4shmQpxhTXcu67hxVM3NiHO1yUxF7Hlb943XQiY/E8llIZx3xfNCwdWQp4XhyYWpskHh3brmtRBv9N5HuyDl/FTAGZcxo2M4PBsFg6tW+PdX5ImQbj4kd4O3Sd8mdirYr2h2Kb5ujFKfEkK3BX+yQ8tHIUNZ7DprpnYkatuyfU/JTiHWspankTwhqiryw4F1iMd4nxxaZvId69orpH1qWUPEdlz9yohD1LjbicRr2b4hZacQ67XLObkIzyKVlHFVeNMYZ0Db2nloX+6XslfIKZzYUAg7ydlz+pOTYm3y7NIc7eqdHPPtstgpZa8Qs92VT4TYQCS9SknlzCzFFjb2XMS4OrkbmH5zdfiOEFP3TbMmh9v3ZO8P8HYxcZuXy4YJ4o8iLHf2SNkrJP5JiMtelD0FheVVD5DngK3SuLpZHEqCci7fHIv3CrmtEqJL8bs3voPaQATXjSad1BZq3UXI1pcyHcXXhBjzP/xsWja5pN4rdIdCRSc3xjeGACZk4hnY/e16ZJ0QNpnl5y/iwkMdIpNsb8OaKHvjsw1VRU4rQVVQjetXb1Oyd0PkxGL5TNbult55iao0nd1kZLPKE5kfDH9Ord8gZVs+vFeILciXd3beLYNTBiG72Bkc26XaTZOF4Zoyd4dx7U4a3awu9Vk52wmussGpy3bFar3PLMQLIe9O8m8IaZ7+1rAfTq/nbhWtu1P8pAyRP+UNHxbyg23ZdOoxGwfnNeoW62Hds8HaPGaTk+wVMszqvEv5zFc5mdRChpRk4bTOdG7We9PDsN1C7L42XxLqn7kPr6LeN4aMRKfPCyk0R/fXD9c/IcTdOTtFsbMt5hUfr4heKVdENiZtm6+dMcInKenHhbhkfTJvNiXvZNNME3JeB/Ja6cCmYtwsszIj+Z3wq/9ilw1PGu0BbyWVdZRRuNnlo1fw2YU5g9HBup5U9vVmF3lHiHubYzz7VeGGtxCdiGgzr8k7F+Z9xC6nMcAhcYzPkd9J68zul4QM76UcpTmgJ+keiNDwZKh2r0TZLNjukrz5c/hj7afcduJS/401yVtCIumOGbI2yVv3DOJmyg5XiZxPWZbd7QM4FwE8J6ChjkzroigeNkHZevL4npCI2ngGG/ziI66LS4jN0rETLDYsN7+IQOVB4YToj9MXcUwLLk29jw5B93AIjfVwcZk9FewHlzaHQje3Ot20YbznBMJ/FXD5rUBuMf04KhH1UG2UmXfwQ6IfJ7t8JOPgOGscKypq07H2Kq/JWyd1+9EOmuvn44kIp8F4rnngaJ4Njl9w2e5tQKbhUXVx3POI/ZPM31j44QtOVSa+uPDSwz8Px6m/NeYluKTfuN/9i3C8zf/+gpiUa+FR119DmmD9i2+vfQlbI/8PPOSwEHv/ICJp0jRtvviS7W+x4R8pAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALPMfcPU6VjYSOk4AAAAASUVORK5CYII=" alt="Startup">
+            </div>
+            <div class="job-details">
+              <h2>Customer Support Executive</h2>
+              <p><strong>Company:</strong> Infosys BPM</p>
+              <p><strong>Location:</strong> Phase 2, Hinjewadi, Pune.
+                 <br><a href="https://maps.app.goo.gl/5RFG6TmNAV13LYMU6" id="location-pin" target="_blank">Click me to open in map 📌</a></p>
+              <p><strong>Job Details:</strong> Handles customer inquiries, resolves complaints, and provides support across various channels like phone, email, or chat. Requires strong communication skills, problem-solving abilities, and a customer-first attitude. Proficiency in CRM tools and multitasking is essential. Ideal for individuals committed to delivering exceptional customer service and ensuring satisfaction.</p>
+              <form action="submit_application.php" method="post">
+                <button type="submit" class="apply-btn">Apply Now</button>
+              </form>
+            </div>
+          </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-video-container">
+            <video autoplay muted loop id="footer-video">
+                <source src="/media/bv10.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="footer-content">
+            <p>© 2024 Able Connect. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="/frontend/contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

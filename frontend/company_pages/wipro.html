@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wipro</title>
+    <link rel="stylesheet" href="/frontend/styles.css">
+    <style>
+        main {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  }
+     #location-pin {
+        text-decoration: none;  
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/media/logo3.png" alt="EDC Logo">
+            </div>
+            <div class="video-container">
+                <video autoplay muted loop id="nav-video">
+                    <source src="/media/bv10.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/frontend/register.html">Sign Up</a></li>
+                <li><a href="/frontend/login.html">Log In</a></li>
+                <li><a href="/frontend/profiles.html">Profiles</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="job-container">
+            <div class="job-logo">
+              <img src="data:image/png;base64,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" alt="Startup">
+            </div>
+            <div class="job-details">
+              <h2>Service Desk Analyst</h2>
+              <p><strong>Company:</strong> Wipro</p>
+              <p><strong>Location:</strong>  Pune,MIDC Pune Infotec park<br><a href="https://maps.app.goo.gl/1nz4YqcZDhnD8U517" id="location-pin" target="_blank">Click me to open in map 📌</a></p>
+              <p><strong>Job Details:</strong>  Strong communication skills, technical troubleshooting abilities, knowledge of ITIL processes, and basic understanding of operating systems, networks, and ticketing tools like ServiceNow or Remedy.</p>
+              <p><strong>Salary:</strong>  ₹25,000–₹35,000/month</p>
+              <form action="submit_application.php" method="post">
+                <button type="submit" class="apply-btn">Apply Now</button>
+              </form>
+            </div>
+          </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-video-container">
+            <video autoplay muted loop id="footer-video">
+                <source src="/media/bv10.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="footer-content">
+            <p>© 2024 Able Connect. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="/frontend/contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
