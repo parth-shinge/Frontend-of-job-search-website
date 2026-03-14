@@ -89,24 +89,3 @@ This project has no third-party runtime dependencies.
 - Python: only optional for local static serving
 
 See `requirements.txt` for environment notes.
-
-## Deployment
-
-This project can be hosted on any static hosting platform:
-
-- GitHub Pages
-- Netlify
-- Vercel (static mode)
-- Any Apache/Nginx static host
-
-If deploying under a subdirectory, update absolute paths (currently starting with `/`) accordingly.
-
-## Contributing
-
-1. Create a feature branch.
-2. Make focused, tested changes.
-3. Open a pull request with clear description and screenshots for UI changes.
-
-## License
-
-No license file is currently included in this repository. Add a license (for example MIT) if you plan to accept external contributions.
