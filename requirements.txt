@@ -1,0 +1,5 @@
+# This is a static frontend project.
+# No Python package dependencies are required.
+#
+# Optional local run command:
+#   python -m http.server 8000
